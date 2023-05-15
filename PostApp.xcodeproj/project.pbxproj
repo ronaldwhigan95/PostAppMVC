@@ -13,6 +13,10 @@
 		F30ADFF62A12A7B700BC2722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30ADFF42A12A7B700BC2722 /* Main.storyboard */; };
 		F30ADFF82A12A7BA00BC2722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30ADFF72A12A7BA00BC2722 /* Assets.xcassets */; };
 		F30ADFFB2A12A7BA00BC2722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30ADFF92A12A7BA00BC2722 /* LaunchScreen.storyboard */; };
+		F30AE0032A12A7CB00BC2722 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AE0022A12A7CB00BC2722 /* PostModel.swift */; };
+		F30AE00A2A12C26800BC2722 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AE0092A12C26800BC2722 /* ApiService.swift */; };
+		F30AE00E2A12C38000BC2722 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AE00C2A12C38000BC2722 /* PostCell.swift */; };
+		F30AE0122A12C85000BC2722 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AE0112A12C85000BC2722 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F30ADFF72A12A7BA00BC2722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F30ADFFA2A12A7BA00BC2722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F30ADFFC2A12A7BA00BC2722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F30AE0022A12A7CB00BC2722 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		F30AE0092A12C26800BC2722 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		F30AE00C2A12C38000BC2722 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		F30AE0112A12C85000BC2722 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		F30ADFED2A12A7B700BC2722 /* PostApp */ = {
 			isa = PBXGroup;
 			children = (
+				F30AE0102A12C82A00BC2722 /* Common */,
+				F30AE00B2A12C35D00BC2722 /* View */,
+				F30AE0082A12C25300BC2722 /* ViewController */,
+				F30AE0072A12C24B00BC2722 /* Service */,
+				F30AE0062A12C24600BC2722 /* Model */,
 				F30ADFEE2A12A7B700BC2722 /* AppDelegate.swift */,
 				F30ADFF02A12A7B700BC2722 /* SceneDelegate.swift */,
-				F30ADFF22A12A7B700BC2722 /* ViewController.swift */,
-				F30ADFF42A12A7B700BC2722 /* Main.storyboard */,
 				F30ADFF72A12A7BA00BC2722 /* Assets.xcassets */,
-				F30ADFF92A12A7BA00BC2722 /* LaunchScreen.storyboard */,
 				F30ADFFC2A12A7BA00BC2722 /* Info.plist */,
 			);
 			path = PostApp;
+			sourceTree = "<group>";
+		};
+		F30AE0062A12C24600BC2722 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F30AE0022A12A7CB00BC2722 /* PostModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F30AE0072A12C24B00BC2722 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F30AE0092A12C26800BC2722 /* ApiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F30AE0082A12C25300BC2722 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F30ADFF22A12A7B700BC2722 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F30AE00B2A12C35D00BC2722 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F30AE00C2A12C38000BC2722 /* PostCell.swift */,
+				F30ADFF42A12A7B700BC2722 /* Main.storyboard */,
+				F30ADFF92A12A7BA00BC2722 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F30AE0102A12C82A00BC2722 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F30AE0112A12C85000BC2722 /* Common.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +191,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F30ADFF32A12A7B700BC2722 /* ViewController.swift in Sources */,
+				F30AE00A2A12C26800BC2722 /* ApiService.swift in Sources */,
+				F30AE0122A12C85000BC2722 /* Common.swift in Sources */,
+				F30AE0032A12A7CB00BC2722 /* PostModel.swift in Sources */,
 				F30ADFEF2A12A7B700BC2722 /* AppDelegate.swift in Sources */,
 				F30ADFF12A12A7B700BC2722 /* SceneDelegate.swift in Sources */,
+				F30AE00E2A12C38000BC2722 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
