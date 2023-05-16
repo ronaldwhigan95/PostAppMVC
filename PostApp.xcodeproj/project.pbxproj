@@ -17,6 +17,7 @@
 		F30AE00A2A12C26800BC2722 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AE0092A12C26800BC2722 /* ApiService.swift */; };
 		F30AE00E2A12C38000BC2722 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AE00C2A12C38000BC2722 /* PostCell.swift */; };
 		F30AE0122A12C85000BC2722 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AE0112A12C85000BC2722 /* Common.swift */; };
+		F30AE0152A12D99A00BC2722 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AE0142A12D99A00BC2722 /* PostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F30AE0092A12C26800BC2722 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		F30AE00C2A12C38000BC2722 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		F30AE0112A12C85000BC2722 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		F30AE0142A12D99A00BC2722 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,13 +66,15 @@
 		F30ADFED2A12A7B700BC2722 /* PostApp */ = {
 			isa = PBXGroup;
 			children = (
-				F30AE0102A12C82A00BC2722 /* Common */,
+				F30AE0102A12C82A00BC2722 /* Utilities */,
 				F30AE00B2A12C35D00BC2722 /* View */,
-				F30AE0082A12C25300BC2722 /* ViewController */,
-				F30AE0072A12C24B00BC2722 /* Service */,
+				F30AE0082A12C25300BC2722 /* ViewModel */,
+				F30AE0072A12C24B00BC2722 /* Web */,
 				F30AE0062A12C24600BC2722 /* Model */,
-				F30ADFEE2A12A7B700BC2722 /* AppDelegate.swift */,
 				F30ADFF02A12A7B700BC2722 /* SceneDelegate.swift */,
+				F30ADFEE2A12A7B700BC2722 /* AppDelegate.swift */,
+				F30ADFF42A12A7B700BC2722 /* Main.storyboard */,
+				F30ADFF92A12A7BA00BC2722 /* LaunchScreen.storyboard */,
 				F30ADFF72A12A7BA00BC2722 /* Assets.xcassets */,
 				F30ADFFC2A12A7BA00BC2722 /* Info.plist */,
 			);
@@ -85,38 +89,37 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		F30AE0072A12C24B00BC2722 /* Service */ = {
+		F30AE0072A12C24B00BC2722 /* Web */ = {
 			isa = PBXGroup;
 			children = (
 				F30AE0092A12C26800BC2722 /* ApiService.swift */,
 			);
-			path = Service;
+			path = Web;
 			sourceTree = "<group>";
 		};
-		F30AE0082A12C25300BC2722 /* ViewController */ = {
+		F30AE0082A12C25300BC2722 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F30ADFF22A12A7B700BC2722 /* ViewController.swift */,
+				F30AE0142A12D99A00BC2722 /* PostViewModel.swift */,
 			);
-			path = ViewController;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F30AE00B2A12C35D00BC2722 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F30ADFF22A12A7B700BC2722 /* ViewController.swift */,
 				F30AE00C2A12C38000BC2722 /* PostCell.swift */,
-				F30ADFF42A12A7B700BC2722 /* Main.storyboard */,
-				F30ADFF92A12A7BA00BC2722 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		F30AE0102A12C82A00BC2722 /* Common */ = {
+		F30AE0102A12C82A00BC2722 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				F30AE0112A12C85000BC2722 /* Common.swift */,
 			);
-			path = Common;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30AE0152A12D99A00BC2722 /* PostViewModel.swift in Sources */,
 				F30ADFF32A12A7B700BC2722 /* ViewController.swift in Sources */,
 				F30AE00A2A12C26800BC2722 /* ApiService.swift in Sources */,
 				F30AE0122A12C85000BC2722 /* Common.swift in Sources */,

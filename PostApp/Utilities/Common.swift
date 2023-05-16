@@ -10,3 +10,7 @@ import Foundation
 enum Server: String {
     case post = "https://jsonplaceholder.typicode.com/posts"
 }
+
+
+
+
